@@ -131,7 +131,48 @@ main{
     }
 
   }
+// fine box2
 
+  #box3{
+    @include display-flex-vertical;
+    background-color: $bg-color;
+    padding-top: 80px;
 
+    #text {
+
+      @include box3-text-block;
+
+      #founders{
+
+        @include box3-text-founders-id;
+
+        & > div:first-child{
+          img{
+            @include box3-text-founders-pics;
+          }
+        }
+
+        & > div:last-child{
+          p:first-child{
+            color: blue;
+          }
+        }
+
+      }
+    }
+
+    button{
+      @include buttons-header;
+    }
+
+    span{
+      color: grey;
+    }
+
+    a{
+      margin: 30px 0 80px;
+    }
+  }
+// fine box3
 
 }
