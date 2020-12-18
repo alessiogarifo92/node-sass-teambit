@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+a{
+  @include all-a;
+}
+
 header{
   @include margin-header;
   nav{
@@ -175,4 +179,25 @@ main{
   }
 // fine box3
 
+}
+// fine main
+
+footer{
+  @include footer-display;
+  #logo-footer{
+    @include display-flex-center;
+    img{
+      @include footer-logo;
+    }
+    h3 > a{
+      color: blue;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+  & > div > ul li{
+    @include footer-list;
+  }
 }
