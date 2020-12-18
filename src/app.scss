@@ -1,0 +1,58 @@
+@import 'common';
+@import 'variables';
+@import 'header';
+@import 'box1';
+@import 'box2';
+@import 'box3';
+@import 'footer';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  @include margin-header;
+  nav{
+    @include display-flex-nav;
+    #logo{
+      @include display-flex-center;
+    }
+
+    ul{
+      @include display-flex-center;
+      li{
+        @include list-rules;
+      }
+      button{
+        @include list-button-rules;
+      }
+
+    }
+  }
+// fine nav
+  #under-nav{
+    @include display-flex-center;
+    & > div{
+      @include header-left;
+      span{
+        color: grey;
+      }
+
+      div{
+        @include display-flex-bottons;
+        button{
+          @include buttons-header;
+        }
+
+      }
+
+    }
+    img{
+      @include img-header-size;
+    }
+
+  }
+
+}

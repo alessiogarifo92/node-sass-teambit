@@ -1,0 +1,61 @@
+// creo impostazioni nav header
+@mixin display-flex-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+
+@mixin margin-header{
+  margin: 100px 80px;
+}
+
+@mixin list-rules{
+  list-style: none;
+  margin-right: 30px;
+  &:hover{
+    color: blue;
+  }
+}
+
+@mixin list-button-rules{
+  padding: 10px;
+  color: blue;
+  border-radius: 10px;
+  border: 1px solid rgb(35,53,105);
+  background-color: white;
+  &:hover{
+    background-color: rgb(35,53,105);
+    color: white;
+  }
+}
+
+@mixin header-left{
+  width: 432px;
+  height: 265px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+@mixin img-header-size{
+  width: 50%;
+  height: 50%;
+}
+
+@mixin display-flex-bottons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin buttons-header{
+  background-color: rgb(35,53,105);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
