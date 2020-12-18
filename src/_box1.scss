@@ -1,2 +1,45 @@
-// colore sfondo
-$bg-color: rgb(255,231,210);
+@mixin box1-rules{
+  background-color: $bg-color;
+  color: $tx-color;
+  padding: 80px;
+}
+
+@mixin box1-img{
+  width: 170px;
+  height: 103px;
+  margin-bottom: 20px;
+}
+
+@mixin box1-title{
+  font-size: 25px;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@mixin box1-display-img{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+  line-height: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+@mixin box1-big-img{
+  width: 25%;
+  height: auto;
+}
+
+@mixin box1-dividing-line{
+  width: 100%;
+  margin: 50px 80px;
+  border-color: 1px solid $tx-color;
+}
+
+@mixin box1-safe-cat{
+  width: 37%;
+  height: auto;
+  margin-left: 16%;
+}

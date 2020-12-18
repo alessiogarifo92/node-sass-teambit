@@ -31,9 +31,14 @@
   }
 }
 
+@mixin header-main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @mixin header-left{
-  width: 432px;
-  height: 265px;
+  height: 345px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -43,13 +48,6 @@
 @mixin img-header-size{
   width: 50%;
   height: 50%;
-}
-
-@mixin display-flex-bottons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 @mixin buttons-header{

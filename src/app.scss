@@ -33,15 +33,21 @@ header{
   }
 // fine nav
   #under-nav{
-    @include display-flex-center;
+    @include header-main;
+
     & > div{
       @include header-left;
+
+      h1{
+        font-size: 40px;
+      }
+
       span{
         color: grey;
       }
 
-      div{
-        @include display-flex-bottons;
+      & > div{
+
         button{
           @include buttons-header;
         }
@@ -53,6 +59,39 @@ header{
       @include img-header-size;
     }
 
+  }
+
+}
+// fine header
+
+main{
+  #box1{
+    @include display-flex-vertical;
+    @include box1-rules;
+
+    h2{
+      @include box1-title;
+    }
+
+    & > div{
+      @include box1-display-img;
+      img{
+        @include box1-img;
+      }
+
+    }
+
+    & > img {
+      @include box1-big-img;
+    }
+
+    hr{
+      @include box1-dividing-line;
+    }
+
+    #safe-cat{
+      @include box1-safe-cat;
+    }
   }
 
 }
