@@ -1,0 +1,32 @@
+@mixin box2-screen-img{
+  width: 50%;
+  height: auto;
+}
+
+@mixin box2-div-float-right{
+  float: right;
+  width: 50%;
+  height: 406px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+// @mixin box2-div-display;
+
+@mixin box2-div-float-img{
+  width: 30%;
+}
+
+
+
+@mixin box2-div-float-left{
+  float: left;
+  width: 50%;
+  height: 406px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}

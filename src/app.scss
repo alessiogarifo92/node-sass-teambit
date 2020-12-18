@@ -83,6 +83,7 @@ main{
 
     & > img {
       @include box1-big-img;
+      margin-bottom: 50px;
     }
 
     hr{
@@ -93,5 +94,44 @@ main{
       @include box1-safe-cat;
     }
   }
+  // fine box1
+
+  #box2{
+    @include display-flex-vertical;
+    margin: 100px 0;
+    .box2-to-left{
+
+      & > img{
+        @include box2-screen-img;
+      }
+
+      & > div{
+        @include box2-div-float-right;
+        img{
+          @include box2-div-float-img;
+        }
+      }
+
+    }
+
+    .box2-to-right{
+      margin: 50px 0;
+      & > img{
+        @include box2-screen-img;
+        float: right;
+      }
+
+      & > div{
+        @include box2-div-float-left;
+        img{
+          @include box2-div-float-img;
+        }
+      }
+
+    }
+
+  }
+
+
 
 }
