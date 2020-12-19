@@ -1,12 +1,13 @@
 @mixin footer-logo{
-  width: 50px;
+  width: 130px;
+  height: 50px;
   margin-right: 15px;
 }
 
 @mixin footer-display{
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-start;
   margin: 100px 80px;
 }
 

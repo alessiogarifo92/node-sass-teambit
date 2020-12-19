@@ -99,8 +99,8 @@ main #box1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffe7d2;
-  color: #58402c;
+  background-color: #4466D4;
+  color: #040F0F;
   padding: 80px;
 }
 
@@ -136,7 +136,7 @@ main #box1 > img {
 main #box1 hr {
   width: 100%;
   margin: 0px 80px 50px;
-  border-color: 1px solid #58402c;
+  border-color: 1px solid #040F0F;
 }
 
 main #box1 #safe-cat {
@@ -201,7 +201,7 @@ main #box3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffe7d2;
+  background-color: #4466D4;
   padding-top: 80px;
 }
 
@@ -247,7 +247,7 @@ main #box3 a {
 footer {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-start;
   margin: 100px 80px;
 }
 
@@ -258,7 +258,8 @@ footer #logo-footer {
 }
 
 footer #logo-footer img {
-  width: 50px;
+  width: 130px;
+  height: 50px;
   margin-right: 15px;
 }
 
@@ -268,6 +269,10 @@ footer #logo-footer h3 > a {
 
 footer #logo-footer h3 > a:hover {
   text-decoration: underline;
+}
+
+footer > div:last-child {
+  width: 136px;
 }
 
 footer > div > ul li {

@@ -197,6 +197,10 @@ footer{
     }
   }
 
+  & > div:last-child{
+    width: 136px;
+  }
+
   & > div > ul li{
     @include footer-list;
   }
